@@ -8,11 +8,13 @@ The latest editions of the output files are available for download in the [outpu
 
 - Decompile game .dlls with ILSpy
 
-- - Place .cs files in `./decompiled` in their respective directories (e.g. `./decompiled/Mafi.Base.Prototypes.Machines/*.cs`)
+- - Place .cs files in `./decompiled` in their respective directories e.g. `./decompiled/Mafi.Base.Prototypes.Machines/*.cs`
+
+- - Place the Translations folder in decompiled as well e.g. `./decompiled/Translations/*.po`
 
 - Install requirements.txt
 
-- Run script `clear; python3 parse_decompiled_machines.py`
+- Run script `clear; python3 run.py`
 
 - Check `./output` for TSVs
 
@@ -20,9 +22,7 @@ The latest editions of the output files are available for download in the [outpu
 
 - Improve comments, DRYness/atomization
 
-- Seems like I can use the translation .po files to get the readable product name by manipulating `Ids.Products.CopperScrap` into `Product_CopperScrap_name` then looking it up in the tranlation file
-- - Could support multi-language export if I can also lookup the translations for the machines (and recipe names? or are these unnecessary) it seems `Chemical plant II` maps to `ChemicalPlant2__name`
-- - Looks like I will have to walk these through `Mafi.Base/Ids.cs` to get the id used in the translation string. The only one I found that can't be directly converted is `Ids.Products.SteamLo` which is actually `Product_SteamLP_name` in the strs
+- Expand id/translation map implementation for more than just Ids.Products
 
 - Write lookups for input and output qtys cause apparently we're using vars there too...
 
@@ -35,3 +35,5 @@ The latest editions of the output files are available for download in the [outpu
 - Add electricity consumption
 
 - Add building costs
+
+- Look into multi-language export using translation files (`Chemical plant II` maps to `ChemicalPlant2__name`)

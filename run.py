@@ -10,6 +10,10 @@ rx_dict = {
     'machine_proto_builder': re.compile(r'registrator.MachineProtoBuilder.Start(.*[^;]*)'),
     'duration_definition': re.compile(r'\tDuration duration[0-9]?[^;]*'),
     'duration_def_ex1': re.compile(r'\t(DURATION) = (.*[^\t]);'),
+
+    'ids_products': re.compile(r'static Products\(\)\n\t\t{\n([^}]*)'),
+    'ids_core_products': re.compile(r'static Products\(\)\n\t\t{\n([^}]*)'),
+    'translation_map': re.compile(r'msgid "(.*)"\nmsgstr "(.*)"'),
 }
 
 def build_machine_dict_and_mcm(file):
@@ -98,47 +102,46 @@ def build_duration_dict(file):
 
     duration_matches_ex = re.findall(rx_dict['duration_def_ex1'], file)
     for match in duration_matches_ex:
-        print(match)
+        # print(match)
         duration_id = match[0]
         duration_time = match[1]
         if duration_time.endswith('.Seconds()'):
             duration_time = duration_time[:-10]
         duration_dict[duration_id] = duration_time
-    print(f'{duration_dict}')
+    # print(f'{duration_dict}')
     return duration_dict
 
-def construct_recipes_dict(recipes_dict, identifier, name, machine, duration, inputs, outputs):
+def _lookup_io_name_id_translation(ioname, ids_dict, translations_dict):
+    if ioname == '':
+        return ioname
+    if ioname in ids_dict:
+        ioname = ids_dict[ioname]
+        if ioname in translations_dict:
+            ioname = translations_dict[ioname]
+        else:
+            print(f'Product name not in translations_dict: {ioname}')
+    else:
+        print(f'Product name not in ids_dict: {ioname}')
+    return ioname
+
+def construct_recipes_dict(recipes_dict, identifier, name, machine, duration, inputs, outputs, ids_dict, translations_dict):
     recipes_dict.setdefault('identifier', []).append(identifier)
     recipes_dict.setdefault('name', []).append(name)
     recipes_dict.setdefault('machine', []).append(machine)
     recipes_dict.setdefault('duration', []).append(duration)
-    recipes_dict.setdefault('input1name', []).append(inputs[0][1])
-    recipes_dict.setdefault('input1qty', []).append(inputs[0][0])
-    recipes_dict.setdefault('input2name', []).append(inputs[1][1])
-    recipes_dict.setdefault('input2qty', []).append(inputs[1][0])
-    recipes_dict.setdefault('input3name', []).append(inputs[2][1])
-    recipes_dict.setdefault('input3qty', []).append(inputs[2][0])
-    recipes_dict.setdefault('input4name', []).append(inputs[3][1])
-    recipes_dict.setdefault('input4qty', []).append(inputs[3][0])
-    recipes_dict.setdefault('input5name', []).append(inputs[4][1])
-    recipes_dict.setdefault('input5qty', []).append(inputs[4][0])
-    recipes_dict.setdefault('input6name', []).append(inputs[5][1])
-    recipes_dict.setdefault('input6qty', []).append(inputs[5][0])
-    recipes_dict.setdefault('output1name', []).append(outputs[0][1])
-    recipes_dict.setdefault('output1qty', []).append(outputs[0][0])
-    recipes_dict.setdefault('output2name', []).append(outputs[1][1])
-    recipes_dict.setdefault('output2qty', []).append(outputs[1][0])
-    recipes_dict.setdefault('output3name', []).append(outputs[2][1])
-    recipes_dict.setdefault('output3qty', []).append(outputs[2][0])
-    recipes_dict.setdefault('output4name', []).append(outputs[3][1])
-    recipes_dict.setdefault('output4qty', []).append(outputs[3][0])
-    recipes_dict.setdefault('output5name', []).append(outputs[4][1])
-    recipes_dict.setdefault('output5qty', []).append(outputs[4][0])
-    recipes_dict.setdefault('output6name', []).append(outputs[5][1])
-    recipes_dict.setdefault('output6qty', []).append(outputs[5][0])
+    for n in range(1, 6+1):
+        input_name = _lookup_io_name_id_translation(inputs[n-1][1], ids_dict, translations_dict)
+        input_qty = inputs[n-1][0]
+        recipes_dict.setdefault(f'input{n}name', []).append(input_name)
+        recipes_dict.setdefault(f'input{n}qty', []).append(input_qty)
+    for n in range(1, 6+1):
+        output_name = _lookup_io_name_id_translation(outputs[n-1][1], ids_dict, translations_dict)
+        output_qty = outputs[n-1][0]
+        recipes_dict.setdefault(f'output{n}name', []).append(output_name)
+        recipes_dict.setdefault(f'output{n}qty', []).append(output_qty)
     return recipes_dict
 
-def build_recipes_dict(file, machine_dict, duration_dict):
+def build_recipes_dict(file, machine_dict, duration_dict, ids_dict, translations_dict):
     # now search for recipes
     recipe_matches = re.findall(rx_dict['recipe_builder'], file)
     recipes_dict = {}
@@ -228,7 +231,7 @@ def build_recipes_dict(file, machine_dict, duration_dict):
                 elif duration == '3 * duration' and machine == 'Crusher':
                     duration = 20
                 # print(f'Duration: {duration}')
-                recipes_dict = construct_recipes_dict(recipes_dict, identifier, name, machine, duration, inputs, outputs)
+                recipes_dict = construct_recipes_dict(recipes_dict, identifier, name, machine, duration, inputs, outputs, ids_dict, translations_dict)
         else:
             machine = start_op.split(", ")[2]
             if machine in machine_dict:
@@ -249,11 +252,11 @@ def build_recipes_dict(file, machine_dict, duration_dict):
             elif duration == '3 * duration' and machine == 'Crusher':
                 duration = 20
             # print(f'Duration: {duration}')
-            recipes_dict = construct_recipes_dict(recipes_dict, identifier, name, machine, duration, inputs, outputs)
+            recipes_dict = construct_recipes_dict(recipes_dict, identifier, name, machine, duration, inputs, outputs, ids_dict, translations_dict)
         
     return recipes_dict
 
-def parse_file(filepath):
+def parse_machine_prototypes(filepath, ids_dict, translations_dict):
     with open(filepath, 'r') as file_object:
         print('Read File')
         file = file_object.read()
@@ -262,12 +265,116 @@ def parse_file(filepath):
         print('Build Duration Dict')
         duration_dict = build_duration_dict(file)
         print('Build Recipes Dict')
-        recipes_dict = build_recipes_dict(file, machine_dict, duration_dict)
+        recipes_dict = build_recipes_dict(file, machine_dict, duration_dict, ids_dict, translations_dict)
     return (recipes_dict, machine_cost_map)
 
+def _transform_id_match(match, matches):
+    if ' = ' not in match or (' = new ' in match and '"' not in match) or 'new Proto.ID("Product_VirtualResource' in match:
+        print(f'Skipping {match}')
+        return []
+    split = match.split(' = ')
+    product_id = split[0]
+    translation_id = split[1]
+    result = []
+    if translation_id.startswith('CreateId('):
+        translation_id = translation_id[10:-2]
+    elif translation_id.startswith('CreateVirtualId('):
+        translation_id = 'Virtual_' + translation_id[17:-2]
+    elif translation_id.startswith('new ProductProto.ID('):
+        translation_id = translation_id[29:-2]
+    elif translation_id.startswith('new Proto.ID('):
+        translation_id = translation_id[22:-2]
+    # add extra map for product_id if in IdsCore.Products
+    elif translation_id.startswith('IdsCore.Products.'):
+        core_product_id = translation_id[17:]
+        for core_match in matches:
+            if core_product_id in core_match and 'IdsCore.Products.' not in core_match:
+                print(f'Found core product in matches: {core_product_id}: {core_match}')
+                core_match_result = _transform_id_match(core_match, matches)
+                translation_id = core_match_result[0][1]
+                print(f'Adding extra core product to map: Ids.Products. {product_id} = {translation_id}')
+                result.append((product_id, translation_id))
+                product_id = core_product_id
+                break
+        if core_product_id != product_id:
+            print(f'Could not find core product in matches: {core_product_id}: {matches}')
+            sys.exit()
+    result.append((product_id, translation_id))
+    return result
+
+def parse_ids(path_to_ids, path_to_core_ids):
+    # TODO: expand to more than IDs.Products
+    ids_dict = {}
+    with open(path_to_ids, 'r') as file_object:
+        print('Read IDs File')
+        file = file_object.read()
+        matches = re.findall(rx_dict['ids_products'], file)[0]
+        with open(path_to_core_ids, 'r') as core_file_object:
+            print('Read Core IDs File')
+            core_file = core_file_object.read()
+            matches += re.findall(rx_dict['ids_core_products'], core_file)[0]
+        matches = re.sub(r'[\t\n\r]', '', matches)
+        matches = matches.split(';')
+        # print(*matches, sep='\n')
+        print('Process Matches')
+        for match in matches:
+            pairs = _transform_id_match(match, matches)
+            for pair in pairs:
+                ids_dict['Ids.Products.' + pair[0]] = pair[1]
+    return ids_dict
+
+def parse_translations(path_to_translations):
+    translations_dict = {}
+    with open(path_to_translations, 'r') as file_object:
+        print('Read translations file')
+        file = file_object.read()
+        matches = re.findall(rx_dict['translation_map'], file)
+        # print(*matches, sep='\n')
+        print('Process Matches')
+        for match in matches:
+            if match[0].startswith('Product_'):
+                translation_id = match[0][8:-6]
+                translation_msg = match[1]
+                translations_dict[translation_id] = translation_msg
+    # print(translations_dict['SteamLP'])
+    return translations_dict
+
 def main():
+    # Get ID map from Mafi.Base/Ids.cs
+    print('Processing IDs')
+    ids_dict = parse_ids('decompiled/Mafi.Base/Ids.cs', 'decompiled/Mafi.Core/IdsCore.cs')
+    print(f'Found {len(ids_dict)} entries\n')
+    
+    # Get translation map from Translations
+    print('Processing Translations')
+    translations_dict = parse_translations('decompiled/Translations/en.po')
+    print(f'Found {len(translations_dict)} entries\n')
+
+    # Check that all in ids_dict have entries in translation_dict
+    print('Checking for ids without translations:\n')
+    count = 0
+    for key, value in ids_dict.items():
+        if value not in translations_dict:
+            count += 1
+            msg = f'\t{key}: {value}'
+            if key in translations_dict:
+                msg += f' | Key Found in translations but value was: {translations_dict[key]}'
+            print(msg)
+    if count > 0:
+        print('\n')
+    print(f'Found {count} IDs missing translations\n')
+
+    # Save maps as tsvs
+    ids_df = pd.DataFrame.from_dict(data=ids_dict, orient='index')
+    translations_df = pd.DataFrame.from_dict(data=translations_dict, orient='index')
+    ids_df.to_csv('output/ids_map_df.tsv', sep='\t', header=False)
+    translations_df.to_csv('output/translations_map_df.tsv', sep='\t', header=False)
+
+    # Now process all machines
+    print('Processing Machines')
     # files = ['MetalCastersData.cs', 'FurnacesData.cs']
     files = []
+    print('Get Filepaths')
     for (dirpath, dirnames, filenames) in walk('decompiled/Mafi.Base.Prototypes.Machines'):
         # TODO: Microchips, Flares and other waste venters are weird, need to add custom logic
         files_to_skip = ['FlareData.cs', 'SmokeStackData.cs', 'MicrochipMakerData.cs', 'AnaerobicDigesterData.cs', 'BurnerData.cs', 'GeneralMixerData.cs', 'WellPumpsData.cs']
@@ -286,7 +393,7 @@ def main():
         print(f'\n-- {path} --')
         filepath = 'decompiled/Mafi.Base.Prototypes.Machines/' + path
 
-        recipe_entries, mcm = parse_file(filepath)
+        recipe_entries, mcm = parse_machine_prototypes(filepath, ids_dict, translations_dict)
         if len(recipe_entries) > 0:
             df_size_sum += len(recipe_entries['identifier'])
             recipe_entries['file'] = [path] * len(recipe_entries['identifier'])

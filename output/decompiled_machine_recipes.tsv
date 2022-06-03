@@ -1,155 +1,155 @@
 identifier	name	machine	duration	input1name	input1qty	input2name	input2qty	input3name	input3qty	input4name	input4qty	input5name	input5qty	input6name	input6qty	output1name	output1qty	output2name	output2qty	output3name	output3qty	output4name	output4qty	output5name	output5qty	output6name	output6qty	file
-Ids.Recipes.GoldSmelting	Gold smelting	Gold furnace	30	Ids.Products.GoldOreConcentrate	6	Ids.Products.Sand	1									Ids.Products.Gold	3											GoldFurnaceData.cs
-Ids.Recipes.GoldScrapSmelting	Gold smelting	Gold furnace	30	Ids.Products.GoldScrap	3											Ids.Products.Gold	3	Ids.Products.Exhaust	3									GoldFurnaceData.cs
-Ids.Recipes.FuelGasSynthesis	FuelGas synthesis	Chemical plant II	20	Ids.Products.Hydrogen	8	Ids.Products.CarbonDioxide	8									Ids.Products.FuelGas	8											ChemicalPlantData.cs
-Ids.Recipes.GraphiteProduction	Graphite production	Chemical plant II	40	Ids.Products.Coal	4	Ids.Products.Chlorine	2									Ids.Products.Graphite	8	Ids.Products.SourWater	4									ChemicalPlantData.cs
-Ids.Recipes.GraphiteProductionCo2	Graphite production	Chemical plant II	20	Ids.Products.CarbonDioxide	24											Ids.Products.Graphite	1											ChemicalPlantData.cs
-Ids.Recipes.AnestheticsProduction	Anesthetics production	Chemical plant II	20	Ids.Products.Ammonia	2	Ids.Products.HydrogenFluoride	4	Ids.Products.Steel	1							Ids.Products.Anesthetics	8											ChemicalPlantData.cs
-Ids.Recipes.MorphineProduction	Morphine production	Chemical plant II	20	Ids.Products.Poppy	4	Ids.Products.Acid	2	Ids.Products.Glass	2							Ids.Products.Morphine	8											ChemicalPlantData.cs
-Ids.Recipes.AmmoniaSynthesis	Ammonia synthesis	Chemical plant	40	Ids.Products.Hydrogen	4	Ids.Products.Nitrogen	8									Ids.Products.Ammonia	4											ChemicalPlantData.cs
-Ids.Recipes.AmmoniaSynthesisT2	Ammonia synthesis	Chemical plant II	20	Ids.Products.Hydrogen	4	Ids.Products.Nitrogen	8									Ids.Products.Ammonia	4											ChemicalPlantData.cs
-Ids.Recipes.DisinfectantProduction	Disinfectant production	Chemical plant	40	Ids.Products.Ethanol	3	Ids.Products.Plastic	2									Ids.Products.Disinfectant	8											ChemicalPlantData.cs
-Ids.Recipes.DisinfectantProductionT2	Disinfectant production	Chemical plant II	20	Ids.Products.Ethanol	3	Ids.Products.Plastic	2									Ids.Products.Disinfectant	8											ChemicalPlantData.cs
-Ids.Recipes.EthanolCookingOilReforming	Fuel transesterification	Chemical plant	40	Ids.Products.Ethanol	5	Ids.Products.CookingOil	12									Ids.Products.Diesel	18											ChemicalPlantData.cs
-Ids.Recipes.EthanolCookingOilReformingT2	Fuel transesterification	Chemical plant II	20	Ids.Products.Ethanol	5	Ids.Products.CookingOil	12									Ids.Products.Diesel	18											ChemicalPlantData.cs
-Ids.Recipes.FertilizerProduction	Fertilizer synthesis	Chemical plant	40	Ids.Products.Ammonia	4	Ids.Products.Nitrogen	12	Ids.Products.Water	4							Ids.Products.FertilizerChemical	8											ChemicalPlantData.cs
-Ids.Recipes.FertilizerProductionT2	Fertilizer synthesis	Chemical plant II	20	Ids.Products.Ammonia	4	Ids.Products.Nitrogen	12	Ids.Products.Water	4							Ids.Products.FertilizerChemical	8											ChemicalPlantData.cs
-Ids.Recipes.LiquidNitrogen	Liquid nitrogen production	Chemical plant	20	Ids.Products.Nitrogen	6	Ids.Products.Steel	2									Ids.Products.NitrogenLiquidTank	4											ChemicalPlantData.cs
-Ids.Recipes.LiquidNitrogenT2	Liquid nitrogen production	Chemical plant II	10	Ids.Products.Nitrogen	6	Ids.Products.Steel	2									Ids.Products.NitrogenLiquidTank	4											ChemicalPlantData.cs
-Ids.Recipes.CopperElectrolysis	Copper purification (acid)	Copper electrolysis	40	Ids.Products.ImpureCopper	16	Ids.Products.Acid	4									Ids.Products.Copper	16											CopperElectrolysisData.cs
-Ids.Recipes.CopperElectrolysisWithWater	Copper purification (water)	Copper electrolysis	40	Ids.Products.ImpureCopper	16	Ids.Products.Water	4									Ids.Products.Copper	13											CopperElectrolysisData.cs
-Ids.Recipes.CharcoalBurning	Charcoal making	Coal maker	40	Ids.Products.Wood	20											Ids.Products.Coal	4											CharcoalMakerData.cs
-Ids.Recipes.WheatMilling	Wheat milling	Mill	30	Ids.Products.Wheat	8											Ids.Products.Flour	8	Ids.Products.AnimalFeed	1									FoodMillData.cs
-Ids.Recipes.SoybeanMilling	Soybean milling	Mill	30	Ids.Products.Soybean	8											Ids.Products.CookingOil	3	Ids.Products.AnimalFeed	4									FoodMillData.cs
-Ids.Recipes.CanolaMilling	Canola milling	Mill	30	Ids.Products.Canola	8											Ids.Products.CookingOil	6	Ids.Products.AnimalFeed	2									FoodMillData.cs
-Ids.Recipes.CornMilling	Corn milling (wet)	Mill	40	Ids.Products.Corn	8	Ids.Products.Water	2									Ids.Products.CornMash	6	Ids.Products.AnimalFeed	2									FoodMillData.cs
-Ids.Recipes.RubberProductionNaphtha	Rubber production	Rubber maker	20	Ids.Products.Naphtha	quantity	Ids.Products.Sulfur	quantity2									Ids.Products.Rubber	quantity4											VacuumDistillationTowerData.cs
-Ids.Recipes.RubberProductionNaphthaAlt	Rubber production (coal)	Rubber maker	30	Ids.Products.Naphtha	quantity	Ids.Products.Coal	quantity3									Ids.Products.Rubber	quantity4	Ids.Products.WasteWater	1									VacuumDistillationTowerData.cs
-Ids.Recipes.RubberProductionEthanol	Rubber production (ethanol)	Rubber maker	20	Ids.Products.Ethanol	quantity	Ids.Products.Sulfur	quantity2									Ids.Products.Rubber	quantity4											VacuumDistillationTowerData.cs
-Ids.Recipes.RubberProductionDiesel	Rubber production (alt)	Rubber maker	20	Ids.Products.Diesel	quantity	Ids.Products.Sulfur	quantity2									Ids.Products.Rubber	quantity4											VacuumDistillationTowerData.cs
-Ids.Recipes.RubberProductionDieselWithCoal	Rubber production (coal) (alt)	Rubber maker	30	Ids.Products.Diesel	quantity	Ids.Products.Coal	quantity3									Ids.Products.Rubber	quantity4	Ids.Products.WasteWater	2									VacuumDistillationTowerData.cs
-Ids.Recipes.SugarToEthanolFermentation	Ethanol making (sugar)	Fermentation tank	40	Ids.Products.Sugar	8	Ids.Products.Oxygen	8									Ids.Products.Ethanol	4	Ids.Products.CarbonDioxide	8									FermentationTankData.cs
-Ids.Recipes.CornToEthanolFermentation	Ethanol making (corn)	Fermentation tank	40	Ids.Products.CornMash	6	Ids.Products.Oxygen	8									Ids.Products.Ethanol	3	Ids.Products.CarbonDioxide	6									FermentationTankData.cs
-Ids.Recipes.AntibioticsFermentation	Antibiotics	Fermentation tank	80	Ids.Products.Sugar	4	Ids.Products.Ammonia	1	Ids.Products.Oxygen	8							Ids.Products.Antibiotics	8	Ids.Products.CarbonDioxide	4									FermentationTankData.cs
-Ids.Recipes.CrudeOilRefiningT1	Crude oil refining	Distillation (stage I)	20	Ids.Products.CrudeOil	18	Ids.Products.SteamHi	3									Ids.Products.MediumOil	16	Ids.Products.HeavyOil	2	Ids.Products.SourWater	6							OilDistillationData.cs
-Ids.Recipes.CrudeOilRefiningT2	Crude oil refining	Distillation (stage II)	20	Ids.Products.MediumOil	16	Ids.Products.SteamHi	2									Ids.Products.Diesel	12	Ids.Products.LightOil	4									OilDistillationData.cs
-Ids.Recipes.HeavyDistillateRefining	Heavy distillate refining	Distillation (stage III)	20	Ids.Products.LightOil	4	Ids.Products.SteamHi	1									Ids.Products.Naphtha	4	Ids.Products.FuelGas	6									OilDistillationData.cs
-Ids.Recipes.IronOreCrushing	Iron ore crushing	Crusher	20	Ids.Products.IronOre	12											Ids.Products.IronOreCrushed	12											CrusherData.cs
-Ids.Recipes.CopperOreCrushing	Copper ore crushing	Crusher	20	Ids.Products.CopperOre	12											Ids.Products.CopperOreCrushed	12											CrusherData.cs
-Ids.Recipes.SlagCrushing	Slag crushing	Crusher	20	Ids.Products.Slag	8											Ids.Products.SlagCrushed	8											CrusherData.cs
-Ids.Recipes.RockCrushing	Rock crushing	Crusher	20	Ids.Products.Rock	8											Ids.Products.Gravel	8											CrusherData.cs
-Ids.Recipes.GravelCrushing	Gravel crushing	Crusher	20	Ids.Products.Gravel	8											Ids.Products.Sand	8											CrusherData.cs
-Ids.Recipes.UraniumCrushing	Uranium crushing	Crusher	60	Ids.Products.UraniumOre	12											Ids.Products.UraniumOreCrushed	12											CrusherData.cs
-Ids.Recipes.GoldOreCrushing	Gold ore crushing	Crusher	30	Ids.Products.GoldOre	12											Ids.Products.GoldOreCrushed	12											CrusherData.cs
-Ids.Recipes.GoldOreMilling	Gold ore milling	Crusher	30	Ids.Products.GoldOreCrushed	24											Ids.Products.GoldOrePowder	24											CrusherData.cs
-Ids.Recipes.DieselDistillationBasic	Diesel distillation (basic)	Basic distiller	20	Ids.Products.CrudeOil	18	Ids.Products.Coal	2									Ids.Products.Diesel	8	Ids.Products.WasteWater	4	Ids.Products.Exhaust	12							BasicDieselDistillerData.cs
-Ids.Recipes.WaterDesalinationBasic	Water desalination (basic)	Basic distiller	10	Ids.Products.Seawater	10	Ids.Products.Coal	1									Ids.Products.Water	6	Ids.Products.Brine	4									BasicDieselDistillerData.cs
-Ids.Recipes.HeavyOilCracking	HeavyOil cracking	Cracking unit	20	Ids.Products.HeavyOil	4	Ids.Products.Hydrogen	4									Ids.Products.Diesel	8	Ids.Products.FuelGas	2									CrackingUnitData.cs
-Ids.Recipes.HeavyOilCrackingToNaphtha	HeavyOil cracking	Cracking unit	20	Ids.Products.HeavyOil	4	Ids.Products.Hydrogen	4									Ids.Products.Naphtha	6	Ids.Products.FuelGas	4									CrackingUnitData.cs
-Ids.Recipes.NaphthaReforming	Naphtha reforming	Cracking unit	20	Ids.Products.Naphtha	6	Ids.Products.Hydrogen	4									Ids.Products.Diesel	8	Ids.Products.FuelGas	2									CrackingUnitData.cs
-Ids.Recipes.DieselReforming	Diesel reforming	Cracking unit	20	Ids.Products.Diesel	8	Ids.Products.SteamHi	1									Ids.Products.Naphtha	6	Ids.Products.SourWater	1									CrackingUnitData.cs
-Ids.Recipes.NaphthaReformingToGas	Naphtha reforming	Cracking unit	20	Ids.Products.Naphtha	8	Ids.Products.SteamHi	2									Ids.Products.FuelGas	10	Ids.Products.SourWater	2									CrackingUnitData.cs
-Ids.Recipes.FuelGasReforming	FuelGas reforming	Cracking unit	20	Ids.Products.FuelGas	12	Ids.Products.Oxygen	12									Ids.Products.Diesel	6	Ids.Products.CarbonDioxide	12									CrackingUnitData.cs
-Ids.Recipes.SteamHpCondensation	Hi-press steam condensation	Cooling tower	10	Ids.Products.SteamHi	4											Ids.Products.Water	2											CoolingTowerData.cs
-Ids.Recipes.SteamLpCondensation	Lo-press steam condensation	Cooling tower	10	Ids.Products.SteamLo	4											Ids.Products.Water	2											CoolingTowerData.cs
-Ids.Recipes.SteamDepletedCondensation	Depleted steam condensation	Cooling tower	10	Ids.Products.SteamDepleted	4											Ids.Products.Water	2											CoolingTowerData.cs
-Ids.Recipes.SteamHpCondensationT2	Hi-press steam condensation	Cooling tower (large)	10	Ids.Products.SteamHi	16											Ids.Products.Water	12											CoolingTowerData.cs
-Ids.Recipes.SteamLpCondensationT2	Lo-press steam condensation	Cooling tower (large)	10	Ids.Products.SteamLo	16											Ids.Products.Water	12											CoolingTowerData.cs
-Ids.Recipes.SteamDepletedCondensationT2	Depleted steam condensation	Cooling tower (large)	10	Ids.Products.SteamDepleted	16											Ids.Products.Water	12											CoolingTowerData.cs
-Ids.Recipes.GlassCastingT2	Glass casting	Glass maker II	20	Ids.Products.MoltenGlass	16											Ids.Products.Glass	24											GlassMakerData.cs
-Ids.Recipes.GlassCastingT1	Glass casting	Glass maker	20	Ids.Products.MoltenGlass	8											Ids.Products.Glass	8	Ids.Products.Slag	2									GlassMakerData.cs
-Ids.Recipes.BreadProduction	Bread making	Baking unit	30	Ids.Products.Flour	8	Ids.Products.Water	4									Ids.Products.Bread	12											BakingUnitData.cs
-Ids.Recipes.CakeProduction	Cake production	Baking unit	30	Ids.Products.Flour	5	Ids.Products.Sugar	2	Ids.Products.CookingOil	1	Ids.Products.Eggs	1	Ids.Products.Fruit	1			Ids.Products.Cake	7											BakingUnitData.cs
-Ids.Recipes.AirSeparation	Air separation	Air separator	20													Ids.Products.Oxygen	12	Ids.Products.Nitrogen	12									AirSeparatorData.cs
-Ids.Recipes.SteamGenerationCoal	Steam generation	Boiler (coal)	10	Ids.Products.Water	8	Ids.Products.Coal	3									Ids.Products.SteamHi	8	Ids.Products.Exhaust	6									BoilersData.cs
-Ids.Recipes.SteamGenerationBiomass	Steam generation	Boiler (coal)	10	Ids.Products.Water	8	Ids.Products.Biomass	12									Ids.Products.SteamHi	8											BoilersData.cs
-Ids.Recipes.SteamGenerationAnimalFeed	Steam generation	Boiler (coal)	10	Ids.Products.Water	8	Ids.Products.AnimalFeed	12									Ids.Products.SteamHi	8											BoilersData.cs
-Ids.Recipes.SteamGenerationHeavyOil	Steam generation	Boiler (gas)	10	Ids.Products.Water	8	Ids.Products.HeavyOil	4									Ids.Products.SteamHi	8	Ids.Products.Exhaust	10									BoilersData.cs
-Ids.Recipes.SteamGenerationMediumOil	Steam generation	Boiler (gas)	10	Ids.Products.Water	8	Ids.Products.MediumOil	6									Ids.Products.SteamHi	8	Ids.Products.Exhaust	10									BoilersData.cs
-Ids.Recipes.SteamGenerationLightOil	Steam generation	Boiler (gas)	10	Ids.Products.Water	8	Ids.Products.LightOil	6									Ids.Products.SteamHi	8											BoilersData.cs
-Ids.Recipes.SteamGenerationNaphtha	Steam generation	Boiler (gas)	10	Ids.Products.Water	8	Ids.Products.Naphtha	6									Ids.Products.SteamHi	8											BoilersData.cs
-Ids.Recipes.SteamGenerationEthanol	Steam generation	Boiler (gas)	10	Ids.Products.Water	8	Ids.Products.Ethanol	6									Ids.Products.SteamHi	8	Ids.Products.CarbonDioxide	8									BoilersData.cs
-Ids.Recipes.SteamGenerationFuelGas	Steam generation	Boiler (gas)	10	Ids.Products.Water	8	Ids.Products.FuelGas	8									Ids.Products.SteamHi	8	Ids.Products.CarbonDioxide	8									BoilersData.cs
-Ids.Recipes.SteamGenerationHydrogen	Steam generation	Boiler (gas)	10	Ids.Products.Water	8	Ids.Products.Hydrogen	8									Ids.Products.SteamHi	8	Ids.Products.SteamDepleted	2									BoilersData.cs
-Ids.Recipes.SteamGenerationElectric	Steam generation	Boiler (electric)	10	Ids.Products.Water	4											Ids.Products.SteamHi	4											BoilersData.cs
-Ids.Recipes.WaterTreatment	Water treatment	Wastewater treatment	30	Ids.Products.WasteWater	80	Ids.Products.Sand	4	Ids.Products.Chlorine	4							Ids.Products.Water	40	Ids.Products.Sludge	12									WaterTreatmentData.cs
-Ids.Recipes.WaterTreatmentT2	Water treatment (advanced)	Wastewater treatment	30	Ids.Products.WasteWater	80	Ids.Products.FilterMedia	4	Ids.Products.Chlorine	8							Ids.Products.Water	60	Ids.Products.Sludge	18									WaterTreatmentData.cs
-Ids.Recipes.ToxicSlurryTreatment	Toxic slurry treatment	Wastewater treatment	30	Ids.Products.ToxicSlurry	24	Ids.Products.FilterMedia	2	Ids.Products.Brine	6							Ids.Products.Water	20	Ids.Products.Slag	6									WaterTreatmentData.cs
-Ids.Recipes.SiliconTreatment	Silicon treatment	Silicon reactor	20	Ids.Products.MoltenSilicon	4	Ids.Products.Hydrogen	1									Ids.Products.PolySilicon	4											SiliconReactorData.cs
-Ids.Recipes.CopperSmeltingT1Scrap	Copper scrap smelting	Blast furnace	20	Ids.Products.CopperScrap	8	Ids.Products.Coal	3									Ids.Products.MoltenCopper	8	Ids.Products.Exhaust	6									FurnacesData.cs
-Ids.Recipes.CopperSmeltingT1	Copper smelting	Blast furnace	20	Ids.Products.CopperOre	8	Ids.Products.Coal	3									Ids.Products.MoltenCopper	8	Ids.Products.Slag	4									FurnacesData.cs
-Ids.Recipes.CopperSmeltingT2Scrap	Copper scrap smelting	Blast furnace II	20	Ids.Products.CopperScrap	16	Ids.Products.Coal	5									Ids.Products.MoltenCopper	16	Ids.Products.Exhaust	10									FurnacesData.cs
-Ids.Recipes.CopperSmeltingT2	Copper smelting (sand)	Blast furnace II	20	Ids.Products.CopperOreCrushed	12	Ids.Products.Sand	2	Ids.Products.Coal	5							Ids.Products.MoltenCopper	16	Ids.Products.Slag	6	Ids.Products.Exhaust	12							FurnacesData.cs
-Ids.Recipes.CopperSmeltingArcScrap	Copper scrap smelting (arc)	Arc furnace II	20	Ids.Products.CopperScrap	16	Ids.Products.Graphite	1	Ids.Products.Water	4							Ids.Products.MoltenCopper	16	Ids.Products.SteamLo	4	Ids.Products.Exhaust	2							FurnacesData.cs
-Ids.Recipes.CopperSmeltingArc	Copper smelting (arc)	Arc furnace II	20	Ids.Products.CopperOreCrushed	12	Ids.Products.Sand	2	Ids.Products.Graphite	1	Ids.Products.Water	4					Ids.Products.MoltenCopper	16	Ids.Products.Slag	6	Ids.Products.SteamLo	4							FurnacesData.cs
-Ids.Recipes.GlassSmelting	Glass smelting	Blast furnace	20	Ids.Products.GlassMix	8	Ids.Products.Coal	3									Ids.Products.MoltenGlass	8	Ids.Products.Slag	3	Ids.Products.Exhaust	8							FurnacesData.cs
-Ids.Recipes.GlassSmeltingWithBroken	Glass broken smelting	Blast furnace	20	Ids.Products.BrokenGlass	12	Ids.Products.Coal	3									Ids.Products.MoltenGlass	8	Ids.Products.Exhaust	6									FurnacesData.cs
-Ids.Recipes.GlassSmeltingT2	Glass smelting	Blast furnace II	20	Ids.Products.GlassMix	16	Ids.Products.Coal	5									Ids.Products.MoltenGlass	16	Ids.Products.Slag	4	Ids.Products.Exhaust	12							FurnacesData.cs
-Ids.Recipes.GlassSmeltingT2WithBroken	Glass broken smelting	Blast furnace II	20	Ids.Products.BrokenGlass	24	Ids.Products.Coal	5									Ids.Products.MoltenGlass	16	Ids.Products.Exhaust	10									FurnacesData.cs
-Ids.Recipes.GlassSmeltingArc	Glass smelting	Arc furnace II	20	Ids.Products.GlassMix	16	Ids.Products.Graphite	1	Ids.Products.Water	4							Ids.Products.MoltenGlass	16	Ids.Products.Slag	4	Ids.Products.SteamLo	4							FurnacesData.cs
-Ids.Recipes.GlassSmeltingArcWithBroken	Glass smelting	Arc furnace II	20	Ids.Products.BrokenGlass	24	Ids.Products.Graphite	1	Ids.Products.Water	4							Ids.Products.MoltenGlass	16	Ids.Products.SteamLo	4	Ids.Products.Exhaust	2							FurnacesData.cs
-Ids.Recipes.IronSmeltingT1Scrap	Iron scrap smelting	Blast furnace	20	Ids.Products.IronScrap	8	Ids.Products.Coal	3									Ids.Products.MoltenIron	8	Ids.Products.Exhaust	6									FurnacesData.cs
-Ids.Recipes.IronSmeltingT1Coal	Iron smelting	Blast furnace	20	Ids.Products.IronOre	8	Ids.Products.Coal	3									Ids.Products.MoltenIron	8	Ids.Products.Slag	4									FurnacesData.cs
-Ids.Recipes.IronSmeltingT2Scrap	Iron scrap smelting	Blast furnace II	20	Ids.Products.IronScrap	16	Ids.Products.Coal	5									Ids.Products.MoltenIron	16	Ids.Products.Exhaust	10									FurnacesData.cs
-Ids.Recipes.IronSmeltingT2	Iron smelting (lime)	Blast furnace II	20	Ids.Products.IronOreCrushed	12	Ids.Products.Limestone	1	Ids.Products.Coal	5							Ids.Products.MoltenIron	16	Ids.Products.Slag	6	Ids.Products.Exhaust	12							FurnacesData.cs
-Ids.Recipes.IronSmeltingArcScrap	Iron scrap smelting (arc)	Arc furnace II	20	Ids.Products.IronScrap	16	Ids.Products.Graphite	1	Ids.Products.Water	4							Ids.Products.MoltenIron	16	Ids.Products.SteamLo	4	Ids.Products.Exhaust	2							FurnacesData.cs
-Ids.Recipes.IronSmeltingArc	Iron smelting (arc)	Arc furnace II	20	Ids.Products.IronOreCrushed	12	Ids.Products.Limestone	1	Ids.Products.Graphite	1	Ids.Products.Water	4					Ids.Products.MoltenIron	16	Ids.Products.Slag	6	Ids.Products.SteamLo	4							FurnacesData.cs
-Ids.Recipes.SiliconSmeltingArc	Silicon smelting (Arc)	Arc furnace	20	Ids.Products.Quartz	8	Ids.Products.Coal	2	Ids.Products.Graphite	1							Ids.Products.MoltenSilicon	8	Ids.Products.Slag	3	Ids.Products.Exhaust	6							FurnacesData.cs
-Ids.Recipes.SiliconSmeltingArc2	Silicon smelting (Arc II)	Arc furnace II	20	Ids.Products.Quartz	16	Ids.Products.Coal	4	Ids.Products.Graphite	1	Ids.Products.Water	4					Ids.Products.MoltenSilicon	16	Ids.Products.Slag	6	Ids.Products.SteamHi	4	Ids.Products.Exhaust	12					FurnacesData.cs
-Ids.Recipes.SteelCastingCooledT2	Steel casting (cooled)	Cooled caster II	20	Ids.Products.MoltenSteel	8	Ids.Products.Water	4									Ids.Products.Steel	8											MetalCastersData.cs
-Ids.Recipes.SteelCastingCooled	Steel casting (cooled)	Cooled caster	40	Ids.Products.MoltenSteel	8	Ids.Products.Water	4									Ids.Products.Steel	8											MetalCastersData.cs
-Ids.Recipes.IronCastingT2	Iron casting	Metal caster II	20	Ids.Products.MoltenIron	8											Ids.Products.Iron	8											MetalCastersData.cs
-Ids.Recipes.CopperCastingT2	Copper casting	Metal caster II	20	Ids.Products.MoltenCopper	8											Ids.Products.ImpureCopper	8											MetalCastersData.cs
-Ids.Recipes.IronCasting	Iron casting	Metal caster	40	Ids.Products.MoltenIron	8											Ids.Products.Iron	8											MetalCastersData.cs
-Ids.Recipes.CopperCasting	Copper casting	Metal caster	40	Ids.Products.MoltenCopper	8											Ids.Products.ImpureCopper	8											MetalCastersData.cs
-Ids.Recipes.WaterChilling	Water cooling	Water chiller	20	Ids.Products.Water	10											Ids.Products.ChilledWater	8											WaterChillerData.cs
-Ids.Recipes.WaterDumping	Water dumping	Liquid dump	2	Ids.Products.Water	2																							WasteDumpData.cs
-Ids.Recipes.BrineDumping	Brine dumping	Liquid dump	2	Ids.Products.Brine	2																							WasteDumpData.cs
-Ids.Recipes.WasteWaterDumping	Waste water dumping	Liquid dump	2	Ids.Products.WasteWater	2											Ids.Products.PollutedWater	2											WasteDumpData.cs
-Ids.Recipes.SourWaterDumping	Sour water dumping	Liquid dump	2	Ids.Products.SourWater	2											Ids.Products.PollutedWater	4											WasteDumpData.cs
-Ids.Recipes.WasteAcidDumping	Acid dumping	Liquid dump	2	Ids.Products.Acid	2											Ids.Products.PollutedWater	4											WasteDumpData.cs
-Ids.Recipes.ToxicSlurryDumping	Toxic slurry dumping	Liquid dump	2	Ids.Products.ToxicSlurry	2											Ids.Products.PollutedWater	5											WasteDumpData.cs
-Ids.Recipes.SeaWaterDumping	Seawater dumping	Liquid dump	2	Ids.Products.Seawater	2																							WasteDumpData.cs
-Ids.Recipes.TofuProduction	Tofu making	Food processor	40	Ids.Products.Soybean	6	Ids.Products.Water	4	Ids.Products.Sulfur	1	Ids.Products.Limestone	1					Ids.Products.Tofu	8	Ids.Products.AnimalFeed	3									FoodProcessorData.cs
-Ids.Recipes.MeatProcessing	Meat processing	Food processor	20	Ids.Products.ChickenCarcass	10	Ids.Products.Water	3	Ids.Products.Salt	1							Ids.Products.Meat	5	Ids.Products.MeatTrimmings	2									FoodProcessorData.cs
-Ids.Recipes.SausageProduction	Sausage processing	Food processor	20	Ids.Products.MeatTrimmings	8	Ids.Products.Flour	2	Ids.Products.Salt	3							Ids.Products.Sausage	8											FoodProcessorData.cs
-Ids.Recipes.SnackProductionPotato	Snack production	Food processor	20	Ids.Products.Potato	8	Ids.Products.Salt	2	Ids.Products.CookingOil	1	Ids.Products.Plastic	1					Ids.Products.Snack	12	Ids.Products.Biomass	1									FoodProcessorData.cs
-Ids.Recipes.SnackProductionCorn	Snack production	Food processor	20	Ids.Products.Corn	8	Ids.Products.Salt	2	Ids.Products.CookingOil	1	Ids.Products.Plastic	1					Ids.Products.Snack	16	Ids.Products.Biomass	1									FoodProcessorData.cs
-Ids.Recipes.SugarRefiningCane	Sugar refining (cane)	Food processor	40	Ids.Products.SugarCane	10	Ids.Products.Water	2									Ids.Products.Sugar	8	Ids.Products.Biomass	2									FoodProcessorData.cs
-Ids.Recipes.SteelSmeltingT2	Steel smelting	Oxygen furnace II	40	Ids.Products.MoltenIron	32	Ids.Products.Oxygen	12									Ids.Products.MoltenSteel	16	Ids.Products.Exhaust	24									OxygenFurnaceData.cs
-Ids.Recipes.SteelSmelting	Steel smelting	Oxygen furnace	40	Ids.Products.MoltenIron	16	Ids.Products.Oxygen	12									Ids.Products.MoltenSteel	8	Ids.Products.Exhaust	16									OxygenFurnaceData.cs
-Ids.Recipes.UraniumEnrichment	Uranium enrichment	Enrichment plant	60	Ids.Products.YellowCake	3	Ids.Products.HydrogenFluoride	1									Ids.Products.UraniumPellets	3											UraniumEnrichmentPlant.cs
-Ids.Recipes.HydrogenReforming	Hydrogen reforming	Hydrogen reformer	20	Ids.Products.FuelGas	12	Ids.Products.SteamHi	1									Ids.Products.Hydrogen	12	Ids.Products.CarbonDioxide	12									HydrogenReformerData.cs
-Ids.Recipes.ConcreteMixingSlagT3	Concrete mixing	Concrete Mixer III	20	Ids.Products.Cement	2 * num2	Ids.Products.Sand	2 * num3	Ids.Products.SlagCrushed	2 * num4	Ids.Products.Water	2 * num5					Ids.Products.ConcreteSlab	2 * num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingGravelT3	Concrete mixing	Concrete Mixer III	20	Ids.Products.Cement	2 * num2	Ids.Products.Sand	2 * num3	Ids.Products.Gravel	2 * num4	Ids.Products.Water	2 * num5					Ids.Products.ConcreteSlab	2 * num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingSlagT2	Concrete mixing	Concrete Mixer II	20	Ids.Products.Cement	num2	Ids.Products.Sand	num3	Ids.Products.SlagCrushed	num4	Ids.Products.Water	num5					Ids.Products.ConcreteSlab	num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingGravelT2	Concrete mixing	Concrete Mixer II	20	Ids.Products.Cement	num2	Ids.Products.Sand	num3	Ids.Products.Gravel	num4	Ids.Products.Water	num5					Ids.Products.ConcreteSlab	num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingSlag	Concrete mixing	Concrete Mixer	40	Ids.Products.Cement	num2	Ids.Products.Sand	num3	Ids.Products.SlagCrushed	num4	Ids.Products.Water	num5					Ids.Products.ConcreteSlab	num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingGravel	Concrete mixing	Concrete Mixer	40	Ids.Products.Cement	num2	Ids.Products.Sand	num3	Ids.Products.Gravel	num4	Ids.Products.Water	num5					Ids.Products.ConcreteSlab	num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingBasic	Concrete mixing	Concrete Mixer	40	Ids.Products.Cement	2 * num2	Ids.Products.SlagCrushed	1	Ids.Products.Water	num5 / 2							Ids.Products.ConcreteSlab	num6 / 2											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingBasicGravel	Concrete mixing	Concrete Mixer	40	Ids.Products.Cement	2 * num2	Ids.Products.Gravel	1	Ids.Products.Water	num5 / 2							Ids.Products.ConcreteSlab	num6 / 2											ConcreteMixerData.cs
-Ids.Recipes.GoldSettling	Gold settling	Settling tank	30	Ids.Products.GoldOrePowder	24	Ids.Products.Acid	8									Ids.Products.GoldOreConcentrate	12	Ids.Products.ToxicSlurry	12									SettlingTankData.cs
-Ids.Recipes.UraniumLeaching	Uranium leaching	Settling tank	60	Ids.Products.UraniumOreCrushed	12	Ids.Products.Acid	4									Ids.Products.YellowCake	6	Ids.Products.ToxicSlurry	6									SettlingTankData.cs
-Ids.Recipes.FluorideLeaching	Fluoride leaching	Settling tank	60	Ids.Products.Rock	8	Ids.Products.Acid	6									Ids.Products.HydrogenFluoride	8	Ids.Products.Slag	2									SettlingTankData.cs
-Ids.Recipes.SourWaterStripping	Sour water stripping (recovery)	Sour water stripper	20	Ids.Products.SourWater	12	Ids.Products.SteamHi	2									Ids.Products.Sulfur	4	Ids.Products.Ammonia	4	Ids.Products.Water	8							SourWaterStripperData.cs
-Ids.Recipes.ExhaustFiltering	Exhaust filtering	Exhaust scrubber	10	Ids.Products.Exhaust	30	Ids.Products.Water	4									Ids.Products.Sulfur	1	Ids.Products.CarbonDioxide	12	Ids.Products.SteamLo	4							ExhaustScrubberData.cs
-Ids.Recipes.BrineElectrolysis	Brine electrolysis	Electrolyzer	10	Ids.Products.Brine	6											Ids.Products.Chlorine	4											ElectrolyzerData.cs
-Ids.Recipes.WaterElectrolysis	Water electrolysis	Electrolyzer	80	Ids.Products.Water	1											Ids.Products.Oxygen	8	Ids.Products.Hydrogen	2									ElectrolyzerData.cs
-Ids.Recipes.AmmoniaElectrolysis	Ammonia electrolysis	Electrolyzer	20	Ids.Products.Ammonia	4											Ids.Products.Nitrogen	8	Ids.Products.Hydrogen	4									ElectrolyzerData.cs
-Ids.Recipes.OceanWaterPumping	Ocean water pumping	Seawater pump	10													Ids.Products.Seawater	20											WaterPumpsData.cs
-Ids.Recipes.OceanWaterPumpingT2	Ocean water pumping II	Seawater pump (tall)	10													Ids.Products.Seawater	20											WaterPumpsData.cs
-Ids.Recipes.DesalinationFromHP	Thermal desalination	Thermal desalinator	10	Ids.Products.Seawater	10	Ids.Products.SteamHi	2									Ids.Products.Water	8	Ids.Products.Brine	4									WaterDesalinationPlantData.cs
-Ids.Recipes.DesalinationFromLP	Thermal desalination	Thermal desalinator	20	Ids.Products.Seawater	7	Ids.Products.SteamLo	4									Ids.Products.Water	8	Ids.Products.Brine	3									WaterDesalinationPlantData.cs
-Ids.Recipes.DesalinationFromDepleted	Thermal desalination	Thermal desalinator	40	Ids.Products.Seawater	4	Ids.Products.SteamDepleted	8									Ids.Products.Water	10	Ids.Products.Brine	2									WaterDesalinationPlantData.cs
-Ids.Recipes.PlasticMaking	Plastic making	Polymerization plant	20	Ids.Products.Naphtha	4	Ids.Products.Chlorine	2									Ids.Products.Plastic	16											PolymerizationPlantData.cs
-Ids.Recipes.PlasticMakingEthanol	Plastic making	Polymerization plant	20	Ids.Products.Ethanol	4	Ids.Products.Chlorine	2									Ids.Products.Plastic	16											PolymerizationPlantData.cs
-Ids.Recipes.CementProductionGas	Cement production	Rotary Kiln (gas)	40	Ids.Products.Limestone	12	Ids.Products.FuelGas	4									Ids.Products.Cement	4	Ids.Products.Exhaust	12									RotaryKilnData.cs
-Ids.Recipes.CementProductionHydrogen	Cement production	Rotary Kiln (gas)	40	Ids.Products.Limestone	12	Ids.Products.Hydrogen	4									Ids.Products.Cement	4	Ids.Products.Exhaust	12									RotaryKilnData.cs
-Ids.Recipes.CementProduction	Cement production	Rotary Kiln	40	Ids.Products.Limestone	6	Ids.Products.Coal	1									Ids.Products.Cement	2	Ids.Products.Exhaust	6									RotaryKilnData.cs
-Ids.Recipes.BrineMakingHeated	Brine making	Evaporation pond (heated)	20	Ids.Products.Seawater	30											Ids.Products.Brine	16											EvaporationPondData.cs
-Ids.Recipes.SaltMakingHeated	Salt making	Evaporation pond (heated)	40	Ids.Products.Seawater	30											Ids.Products.Salt	8											EvaporationPondData.cs
-Ids.Recipes.SaltMakingFromBrineHeated	Salt making	Evaporation pond (heated)	20	Ids.Products.Brine	16											Ids.Products.Salt	8											EvaporationPondData.cs
-Ids.Recipes.BrineMaking	Brine making	Evaporation pond	40	Ids.Products.Seawater	30											Ids.Products.Brine	16											EvaporationPondData.cs
-Ids.Recipes.SaltMaking	Salt making	Evaporation pond	80	Ids.Products.Seawater	30											Ids.Products.Salt	8											EvaporationPondData.cs
-Ids.Recipes.SaltMakingFromBrine	Salt making	Evaporation pond	40	Ids.Products.Brine	16											Ids.Products.Salt	8											EvaporationPondData.cs
-Ids.Recipes.SiliconCrystallization	Silicon crystallization	Silicon crystallizer	60	Ids.Products.PolySilicon	18	Ids.Products.Water	1									Ids.Products.SiliconWafer	6											SiliconCrystallizerData.cs
+Ids.Recipes.GoldSmelting	Gold smelting	Gold furnace	30	Gold ore concentrate	6	Sand	1									Gold	3											GoldFurnaceData.cs
+Ids.Recipes.GoldScrapSmelting	Gold smelting	Gold furnace	30	Gold scrap	3											Gold	3	Exhaust	3									GoldFurnaceData.cs
+Ids.Recipes.FuelGasSynthesis	FuelGas synthesis	Chemical plant II	20	Hydrogen	8	Carbon dioxide	8									Fuel gas	8											ChemicalPlantData.cs
+Ids.Recipes.GraphiteProduction	Graphite production	Chemical plant II	40	Coal	4	Chlorine	2									Graphite	8	Sour water	4									ChemicalPlantData.cs
+Ids.Recipes.GraphiteProductionCo2	Graphite production	Chemical plant II	20	Carbon dioxide	24											Graphite	1											ChemicalPlantData.cs
+Ids.Recipes.AnestheticsProduction	Anesthetics production	Chemical plant II	20	Ammonia	2	Hydrogen fluoride	4	Steel	1							Anesthetics	8											ChemicalPlantData.cs
+Ids.Recipes.MorphineProduction	Morphine production	Chemical plant II	20	Poppy	4	Acid	2	Glass	2							Morphine	8											ChemicalPlantData.cs
+Ids.Recipes.AmmoniaSynthesis	Ammonia synthesis	Chemical plant	40	Hydrogen	4	Nitrogen	8									Ammonia	4											ChemicalPlantData.cs
+Ids.Recipes.AmmoniaSynthesisT2	Ammonia synthesis	Chemical plant II	20	Hydrogen	4	Nitrogen	8									Ammonia	4											ChemicalPlantData.cs
+Ids.Recipes.DisinfectantProduction	Disinfectant production	Chemical plant	40	Ethanol	3	Plastic	2									Disinfectant	8											ChemicalPlantData.cs
+Ids.Recipes.DisinfectantProductionT2	Disinfectant production	Chemical plant II	20	Ethanol	3	Plastic	2									Disinfectant	8											ChemicalPlantData.cs
+Ids.Recipes.EthanolCookingOilReforming	Fuel transesterification	Chemical plant	40	Ethanol	5	Cooking oil	12									Diesel	18											ChemicalPlantData.cs
+Ids.Recipes.EthanolCookingOilReformingT2	Fuel transesterification	Chemical plant II	20	Ethanol	5	Cooking oil	12									Diesel	18											ChemicalPlantData.cs
+Ids.Recipes.FertilizerProduction	Fertilizer synthesis	Chemical plant	40	Ammonia	4	Nitrogen	12	Water	4							Fertilizer I	8											ChemicalPlantData.cs
+Ids.Recipes.FertilizerProductionT2	Fertilizer synthesis	Chemical plant II	20	Ammonia	4	Nitrogen	12	Water	4							Fertilizer I	8											ChemicalPlantData.cs
+Ids.Recipes.LiquidNitrogen	Liquid nitrogen production	Chemical plant	20	Nitrogen	6	Steel	2									Liquid Nitrogen	4											ChemicalPlantData.cs
+Ids.Recipes.LiquidNitrogenT2	Liquid nitrogen production	Chemical plant II	10	Nitrogen	6	Steel	2									Liquid Nitrogen	4											ChemicalPlantData.cs
+Ids.Recipes.CopperElectrolysis	Copper purification (acid)	Copper electrolysis	40	Impure copper	16	Acid	4									Copper	16											CopperElectrolysisData.cs
+Ids.Recipes.CopperElectrolysisWithWater	Copper purification (water)	Copper electrolysis	40	Impure copper	16	Water	4									Copper	13											CopperElectrolysisData.cs
+Ids.Recipes.CharcoalBurning	Charcoal making	Coal maker	40	Wood	20											Coal	4											CharcoalMakerData.cs
+Ids.Recipes.WheatMilling	Wheat milling	Mill	30	Wheat	8											Flour	8	Animal feed	1									FoodMillData.cs
+Ids.Recipes.SoybeanMilling	Soybean milling	Mill	30	Soybean	8											Cooking oil	3	Animal feed	4									FoodMillData.cs
+Ids.Recipes.CanolaMilling	Canola milling	Mill	30	Canola	8											Cooking oil	6	Animal feed	2									FoodMillData.cs
+Ids.Recipes.CornMilling	Corn milling (wet)	Mill	40	Corn	8	Water	2									Corn mash	6	Animal feed	2									FoodMillData.cs
+Ids.Recipes.RubberProductionNaphtha	Rubber production	Rubber maker	20	Naphtha	quantity	Sulfur	quantity2									Rubber	quantity4											VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionNaphthaAlt	Rubber production (coal)	Rubber maker	30	Naphtha	quantity	Coal	quantity3									Rubber	quantity4	Waste water	1									VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionEthanol	Rubber production (ethanol)	Rubber maker	20	Ethanol	quantity	Sulfur	quantity2									Rubber	quantity4											VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionDiesel	Rubber production (alt)	Rubber maker	20	Diesel	quantity	Sulfur	quantity2									Rubber	quantity4											VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionDieselWithCoal	Rubber production (coal) (alt)	Rubber maker	30	Diesel	quantity	Coal	quantity3									Rubber	quantity4	Waste water	2									VacuumDistillationTowerData.cs
+Ids.Recipes.SugarToEthanolFermentation	Ethanol making (sugar)	Fermentation tank	40	Sugar	8	Oxygen	8									Ethanol	4	Carbon dioxide	8									FermentationTankData.cs
+Ids.Recipes.CornToEthanolFermentation	Ethanol making (corn)	Fermentation tank	40	Corn mash	6	Oxygen	8									Ethanol	3	Carbon dioxide	6									FermentationTankData.cs
+Ids.Recipes.AntibioticsFermentation	Antibiotics	Fermentation tank	80	Sugar	4	Ammonia	1	Oxygen	8							Antibiotics	8	Carbon dioxide	4									FermentationTankData.cs
+Ids.Recipes.CrudeOilRefiningT1	Crude oil refining	Distillation (stage I)	20	Crude oil	18	Steam hi	3									Medium oil	16	Heavy oil	2	Sour water	6							OilDistillationData.cs
+Ids.Recipes.CrudeOilRefiningT2	Crude oil refining	Distillation (stage II)	20	Medium oil	16	Steam hi	2									Diesel	12	Light oil	4									OilDistillationData.cs
+Ids.Recipes.HeavyDistillateRefining	Heavy distillate refining	Distillation (stage III)	20	Light oil	4	Steam hi	1									Naphtha	4	Fuel gas	6									OilDistillationData.cs
+Ids.Recipes.IronOreCrushing	Iron ore crushing	Crusher	20	Iron ore	12											Iron ore crushed	12											CrusherData.cs
+Ids.Recipes.CopperOreCrushing	Copper ore crushing	Crusher	20	Copper ore	12											Copper ore crushed	12											CrusherData.cs
+Ids.Recipes.SlagCrushing	Slag crushing	Crusher	20	Slag	8											Slag crushed	8											CrusherData.cs
+Ids.Recipes.RockCrushing	Rock crushing	Crusher	20	Rock	8											Gravel	8											CrusherData.cs
+Ids.Recipes.GravelCrushing	Gravel crushing	Crusher	20	Gravel	8											Sand	8											CrusherData.cs
+Ids.Recipes.UraniumCrushing	Uranium crushing	Crusher	60	Uranium ore	12											Uranium ore crushed	12											CrusherData.cs
+Ids.Recipes.GoldOreCrushing	Gold ore crushing	Crusher	30	Gold ore	12											Gold ore crushed	12											CrusherData.cs
+Ids.Recipes.GoldOreMilling	Gold ore milling	Crusher	30	Gold ore crushed	24											Gold ore powder	24											CrusherData.cs
+Ids.Recipes.DieselDistillationBasic	Diesel distillation (basic)	Basic distiller	20	Crude oil	18	Coal	2									Diesel	8	Waste water	4	Exhaust	12							BasicDieselDistillerData.cs
+Ids.Recipes.WaterDesalinationBasic	Water desalination (basic)	Basic distiller	10	Seawater	10	Coal	1									Water	6	Brine	4									BasicDieselDistillerData.cs
+Ids.Recipes.HeavyOilCracking	HeavyOil cracking	Cracking unit	20	Heavy oil	4	Hydrogen	4									Diesel	8	Fuel gas	2									CrackingUnitData.cs
+Ids.Recipes.HeavyOilCrackingToNaphtha	HeavyOil cracking	Cracking unit	20	Heavy oil	4	Hydrogen	4									Naphtha	6	Fuel gas	4									CrackingUnitData.cs
+Ids.Recipes.NaphthaReforming	Naphtha reforming	Cracking unit	20	Naphtha	6	Hydrogen	4									Diesel	8	Fuel gas	2									CrackingUnitData.cs
+Ids.Recipes.DieselReforming	Diesel reforming	Cracking unit	20	Diesel	8	Steam hi	1									Naphtha	6	Sour water	1									CrackingUnitData.cs
+Ids.Recipes.NaphthaReformingToGas	Naphtha reforming	Cracking unit	20	Naphtha	8	Steam hi	2									Fuel gas	10	Sour water	2									CrackingUnitData.cs
+Ids.Recipes.FuelGasReforming	FuelGas reforming	Cracking unit	20	Fuel gas	12	Oxygen	12									Diesel	6	Carbon dioxide	12									CrackingUnitData.cs
+Ids.Recipes.SteamHpCondensation	Hi-press steam condensation	Cooling tower	10	Steam hi	4											Water	2											CoolingTowerData.cs
+Ids.Recipes.SteamLpCondensation	Lo-press steam condensation	Cooling tower	10	Steam lo	4											Water	2											CoolingTowerData.cs
+Ids.Recipes.SteamDepletedCondensation	Depleted steam condensation	Cooling tower	10	Steam depleted	4											Water	2											CoolingTowerData.cs
+Ids.Recipes.SteamHpCondensationT2	Hi-press steam condensation	Cooling tower (large)	10	Steam hi	16											Water	12											CoolingTowerData.cs
+Ids.Recipes.SteamLpCondensationT2	Lo-press steam condensation	Cooling tower (large)	10	Steam lo	16											Water	12											CoolingTowerData.cs
+Ids.Recipes.SteamDepletedCondensationT2	Depleted steam condensation	Cooling tower (large)	10	Steam depleted	16											Water	12											CoolingTowerData.cs
+Ids.Recipes.GlassCastingT2	Glass casting	Glass maker II	20	Molten glass	16											Glass	24											GlassMakerData.cs
+Ids.Recipes.GlassCastingT1	Glass casting	Glass maker	20	Molten glass	8											Glass	8	Slag	2									GlassMakerData.cs
+Ids.Recipes.BreadProduction	Bread making	Baking unit	30	Flour	8	Water	4									Bread	12											BakingUnitData.cs
+Ids.Recipes.CakeProduction	Cake production	Baking unit	30	Flour	5	Sugar	2	Cooking oil	1	Eggs	1	Fruit	1			Cake	7											BakingUnitData.cs
+Ids.Recipes.AirSeparation	Air separation	Air separator	20													Oxygen	12	Nitrogen	12									AirSeparatorData.cs
+Ids.Recipes.SteamGenerationCoal	Steam generation	Boiler (coal)	10	Water	8	Coal	3									Steam hi	8	Exhaust	6									BoilersData.cs
+Ids.Recipes.SteamGenerationBiomass	Steam generation	Boiler (coal)	10	Water	8	Biomass	12									Steam hi	8											BoilersData.cs
+Ids.Recipes.SteamGenerationAnimalFeed	Steam generation	Boiler (coal)	10	Water	8	Animal feed	12									Steam hi	8											BoilersData.cs
+Ids.Recipes.SteamGenerationHeavyOil	Steam generation	Boiler (gas)	10	Water	8	Heavy oil	4									Steam hi	8	Exhaust	10									BoilersData.cs
+Ids.Recipes.SteamGenerationMediumOil	Steam generation	Boiler (gas)	10	Water	8	Medium oil	6									Steam hi	8	Exhaust	10									BoilersData.cs
+Ids.Recipes.SteamGenerationLightOil	Steam generation	Boiler (gas)	10	Water	8	Light oil	6									Steam hi	8											BoilersData.cs
+Ids.Recipes.SteamGenerationNaphtha	Steam generation	Boiler (gas)	10	Water	8	Naphtha	6									Steam hi	8											BoilersData.cs
+Ids.Recipes.SteamGenerationEthanol	Steam generation	Boiler (gas)	10	Water	8	Ethanol	6									Steam hi	8	Carbon dioxide	8									BoilersData.cs
+Ids.Recipes.SteamGenerationFuelGas	Steam generation	Boiler (gas)	10	Water	8	Fuel gas	8									Steam hi	8	Carbon dioxide	8									BoilersData.cs
+Ids.Recipes.SteamGenerationHydrogen	Steam generation	Boiler (gas)	10	Water	8	Hydrogen	8									Steam hi	8	Steam depleted	2									BoilersData.cs
+Ids.Recipes.SteamGenerationElectric	Steam generation	Boiler (electric)	10	Water	4											Steam hi	4											BoilersData.cs
+Ids.Recipes.WaterTreatment	Water treatment	Wastewater treatment	30	Waste water	80	Sand	4	Chlorine	4							Water	40	Sludge	12									WaterTreatmentData.cs
+Ids.Recipes.WaterTreatmentT2	Water treatment (advanced)	Wastewater treatment	30	Waste water	80	Filter media	4	Chlorine	8							Water	60	Sludge	18									WaterTreatmentData.cs
+Ids.Recipes.ToxicSlurryTreatment	Toxic slurry treatment	Wastewater treatment	30	Toxic slurry	24	Filter media	2	Brine	6							Water	20	Slag	6									WaterTreatmentData.cs
+Ids.Recipes.SiliconTreatment	Silicon treatment	Silicon reactor	20	Molten silicon	4	Hydrogen	1									Silicon (poly)	4											SiliconReactorData.cs
+Ids.Recipes.CopperSmeltingT1Scrap	Copper scrap smelting	Blast furnace	20	Copper scrap	8	Coal	3									Molten copper	8	Exhaust	6									FurnacesData.cs
+Ids.Recipes.CopperSmeltingT1	Copper smelting	Blast furnace	20	Copper ore	8	Coal	3									Molten copper	8	Slag	4									FurnacesData.cs
+Ids.Recipes.CopperSmeltingT2Scrap	Copper scrap smelting	Blast furnace II	20	Copper scrap	16	Coal	5									Molten copper	16	Exhaust	10									FurnacesData.cs
+Ids.Recipes.CopperSmeltingT2	Copper smelting (sand)	Blast furnace II	20	Copper ore crushed	12	Sand	2	Coal	5							Molten copper	16	Slag	6	Exhaust	12							FurnacesData.cs
+Ids.Recipes.CopperSmeltingArcScrap	Copper scrap smelting (arc)	Arc furnace II	20	Copper scrap	16	Graphite	1	Water	4							Molten copper	16	Steam lo	4	Exhaust	2							FurnacesData.cs
+Ids.Recipes.CopperSmeltingArc	Copper smelting (arc)	Arc furnace II	20	Copper ore crushed	12	Sand	2	Graphite	1	Water	4					Molten copper	16	Slag	6	Steam lo	4							FurnacesData.cs
+Ids.Recipes.GlassSmelting	Glass smelting	Blast furnace	20	Glass mix	8	Coal	3									Molten glass	8	Slag	3	Exhaust	8							FurnacesData.cs
+Ids.Recipes.GlassSmeltingWithBroken	Glass broken smelting	Blast furnace	20	Broken glass	12	Coal	3									Molten glass	8	Exhaust	6									FurnacesData.cs
+Ids.Recipes.GlassSmeltingT2	Glass smelting	Blast furnace II	20	Glass mix	16	Coal	5									Molten glass	16	Slag	4	Exhaust	12							FurnacesData.cs
+Ids.Recipes.GlassSmeltingT2WithBroken	Glass broken smelting	Blast furnace II	20	Broken glass	24	Coal	5									Molten glass	16	Exhaust	10									FurnacesData.cs
+Ids.Recipes.GlassSmeltingArc	Glass smelting	Arc furnace II	20	Glass mix	16	Graphite	1	Water	4							Molten glass	16	Slag	4	Steam lo	4							FurnacesData.cs
+Ids.Recipes.GlassSmeltingArcWithBroken	Glass smelting	Arc furnace II	20	Broken glass	24	Graphite	1	Water	4							Molten glass	16	Steam lo	4	Exhaust	2							FurnacesData.cs
+Ids.Recipes.IronSmeltingT1Scrap	Iron scrap smelting	Blast furnace	20	Iron scrap	8	Coal	3									Molten iron	8	Exhaust	6									FurnacesData.cs
+Ids.Recipes.IronSmeltingT1Coal	Iron smelting	Blast furnace	20	Iron ore	8	Coal	3									Molten iron	8	Slag	4									FurnacesData.cs
+Ids.Recipes.IronSmeltingT2Scrap	Iron scrap smelting	Blast furnace II	20	Iron scrap	16	Coal	5									Molten iron	16	Exhaust	10									FurnacesData.cs
+Ids.Recipes.IronSmeltingT2	Iron smelting (lime)	Blast furnace II	20	Iron ore crushed	12	Limestone	1	Coal	5							Molten iron	16	Slag	6	Exhaust	12							FurnacesData.cs
+Ids.Recipes.IronSmeltingArcScrap	Iron scrap smelting (arc)	Arc furnace II	20	Iron scrap	16	Graphite	1	Water	4							Molten iron	16	Steam lo	4	Exhaust	2							FurnacesData.cs
+Ids.Recipes.IronSmeltingArc	Iron smelting (arc)	Arc furnace II	20	Iron ore crushed	12	Limestone	1	Graphite	1	Water	4					Molten iron	16	Slag	6	Steam lo	4							FurnacesData.cs
+Ids.Recipes.SiliconSmeltingArc	Silicon smelting (Arc)	Arc furnace	20	Quartz	8	Coal	2	Graphite	1							Molten silicon	8	Slag	3	Exhaust	6							FurnacesData.cs
+Ids.Recipes.SiliconSmeltingArc2	Silicon smelting (Arc II)	Arc furnace II	20	Quartz	16	Coal	4	Graphite	1	Water	4					Molten silicon	16	Slag	6	Steam hi	4	Exhaust	12					FurnacesData.cs
+Ids.Recipes.SteelCastingCooledT2	Steel casting (cooled)	Cooled caster II	20	Molten steel	8	Water	4									Steel	8											MetalCastersData.cs
+Ids.Recipes.SteelCastingCooled	Steel casting (cooled)	Cooled caster	40	Molten steel	8	Water	4									Steel	8											MetalCastersData.cs
+Ids.Recipes.IronCastingT2	Iron casting	Metal caster II	20	Molten iron	8											Iron	8											MetalCastersData.cs
+Ids.Recipes.CopperCastingT2	Copper casting	Metal caster II	20	Molten copper	8											Impure copper	8											MetalCastersData.cs
+Ids.Recipes.IronCasting	Iron casting	Metal caster	40	Molten iron	8											Iron	8											MetalCastersData.cs
+Ids.Recipes.CopperCasting	Copper casting	Metal caster	40	Molten copper	8											Impure copper	8											MetalCastersData.cs
+Ids.Recipes.WaterChilling	Water cooling	Water chiller	20	Water	10											Chilled water	8											WaterChillerData.cs
+Ids.Recipes.WaterDumping	Water dumping	Liquid dump	2	Water	2																							WasteDumpData.cs
+Ids.Recipes.BrineDumping	Brine dumping	Liquid dump	2	Brine	2																							WasteDumpData.cs
+Ids.Recipes.WasteWaterDumping	Waste water dumping	Liquid dump	2	Waste water	2											Water pollution	2											WasteDumpData.cs
+Ids.Recipes.SourWaterDumping	Sour water dumping	Liquid dump	2	Sour water	2											Water pollution	4											WasteDumpData.cs
+Ids.Recipes.WasteAcidDumping	Acid dumping	Liquid dump	2	Acid	2											Water pollution	4											WasteDumpData.cs
+Ids.Recipes.ToxicSlurryDumping	Toxic slurry dumping	Liquid dump	2	Toxic slurry	2											Water pollution	5											WasteDumpData.cs
+Ids.Recipes.SeaWaterDumping	Seawater dumping	Liquid dump	2	Seawater	2																							WasteDumpData.cs
+Ids.Recipes.TofuProduction	Tofu making	Food processor	40	Soybean	6	Water	4	Sulfur	1	Limestone	1					Tofu	8	Animal feed	3									FoodProcessorData.cs
+Ids.Recipes.MeatProcessing	Meat processing	Food processor	20	Chicken carcass	10	Water	3	Salt	1							Meat	5	Meat trimmings	2									FoodProcessorData.cs
+Ids.Recipes.SausageProduction	Sausage processing	Food processor	20	Meat trimmings	8	Flour	2	Salt	3							Sausage	8											FoodProcessorData.cs
+Ids.Recipes.SnackProductionPotato	Snack production	Food processor	20	Potato	8	Salt	2	Cooking oil	1	Plastic	1					Snack	12	Biomass	1									FoodProcessorData.cs
+Ids.Recipes.SnackProductionCorn	Snack production	Food processor	20	Corn	8	Salt	2	Cooking oil	1	Plastic	1					Snack	16	Biomass	1									FoodProcessorData.cs
+Ids.Recipes.SugarRefiningCane	Sugar refining (cane)	Food processor	40	Sugar cane	10	Water	2									Sugar	8	Biomass	2									FoodProcessorData.cs
+Ids.Recipes.SteelSmeltingT2	Steel smelting	Oxygen furnace II	40	Molten iron	32	Oxygen	12									Molten steel	16	Exhaust	24									OxygenFurnaceData.cs
+Ids.Recipes.SteelSmelting	Steel smelting	Oxygen furnace	40	Molten iron	16	Oxygen	12									Molten steel	8	Exhaust	16									OxygenFurnaceData.cs
+Ids.Recipes.UraniumEnrichment	Uranium enrichment	Enrichment plant	60	Yellow cake	3	Hydrogen fluoride	1									Uranium pellets	3											UraniumEnrichmentPlant.cs
+Ids.Recipes.HydrogenReforming	Hydrogen reforming	Hydrogen reformer	20	Fuel gas	12	Steam hi	1									Hydrogen	12	Carbon dioxide	12									HydrogenReformerData.cs
+Ids.Recipes.ConcreteMixingSlagT3	Concrete mixing	Concrete Mixer III	20	Cement	2 * num2	Sand	2 * num3	Slag crushed	2 * num4	Water	2 * num5					Concrete slab	2 * num6											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingGravelT3	Concrete mixing	Concrete Mixer III	20	Cement	2 * num2	Sand	2 * num3	Gravel	2 * num4	Water	2 * num5					Concrete slab	2 * num6											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingSlagT2	Concrete mixing	Concrete Mixer II	20	Cement	num2	Sand	num3	Slag crushed	num4	Water	num5					Concrete slab	num6											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingGravelT2	Concrete mixing	Concrete Mixer II	20	Cement	num2	Sand	num3	Gravel	num4	Water	num5					Concrete slab	num6											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingSlag	Concrete mixing	Concrete Mixer	40	Cement	num2	Sand	num3	Slag crushed	num4	Water	num5					Concrete slab	num6											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingGravel	Concrete mixing	Concrete Mixer	40	Cement	num2	Sand	num3	Gravel	num4	Water	num5					Concrete slab	num6											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingBasic	Concrete mixing	Concrete Mixer	40	Cement	2 * num2	Slag crushed	1	Water	num5 / 2							Concrete slab	num6 / 2											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingBasicGravel	Concrete mixing	Concrete Mixer	40	Cement	2 * num2	Gravel	1	Water	num5 / 2							Concrete slab	num6 / 2											ConcreteMixerData.cs
+Ids.Recipes.GoldSettling	Gold settling	Settling tank	30	Gold ore powder	24	Acid	8									Gold ore concentrate	12	Toxic slurry	12									SettlingTankData.cs
+Ids.Recipes.UraniumLeaching	Uranium leaching	Settling tank	60	Uranium ore crushed	12	Acid	4									Yellow cake	6	Toxic slurry	6									SettlingTankData.cs
+Ids.Recipes.FluorideLeaching	Fluoride leaching	Settling tank	60	Rock	8	Acid	6									Hydrogen fluoride	8	Slag	2									SettlingTankData.cs
+Ids.Recipes.SourWaterStripping	Sour water stripping (recovery)	Sour water stripper	20	Sour water	12	Steam hi	2									Sulfur	4	Ammonia	4	Water	8							SourWaterStripperData.cs
+Ids.Recipes.ExhaustFiltering	Exhaust filtering	Exhaust scrubber	10	Exhaust	30	Water	4									Sulfur	1	Carbon dioxide	12	Steam lo	4							ExhaustScrubberData.cs
+Ids.Recipes.BrineElectrolysis	Brine electrolysis	Electrolyzer	10	Brine	6											Chlorine	4											ElectrolyzerData.cs
+Ids.Recipes.WaterElectrolysis	Water electrolysis	Electrolyzer	80	Water	1											Oxygen	8	Hydrogen	2									ElectrolyzerData.cs
+Ids.Recipes.AmmoniaElectrolysis	Ammonia electrolysis	Electrolyzer	20	Ammonia	4											Nitrogen	8	Hydrogen	4									ElectrolyzerData.cs
+Ids.Recipes.OceanWaterPumping	Ocean water pumping	Seawater pump	10													Seawater	20											WaterPumpsData.cs
+Ids.Recipes.OceanWaterPumpingT2	Ocean water pumping II	Seawater pump (tall)	10													Seawater	20											WaterPumpsData.cs
+Ids.Recipes.DesalinationFromHP	Thermal desalination	Thermal desalinator	10	Seawater	10	Steam hi	2									Water	8	Brine	4									WaterDesalinationPlantData.cs
+Ids.Recipes.DesalinationFromLP	Thermal desalination	Thermal desalinator	20	Seawater	7	Steam lo	4									Water	8	Brine	3									WaterDesalinationPlantData.cs
+Ids.Recipes.DesalinationFromDepleted	Thermal desalination	Thermal desalinator	40	Seawater	4	Steam depleted	8									Water	10	Brine	2									WaterDesalinationPlantData.cs
+Ids.Recipes.PlasticMaking	Plastic making	Polymerization plant	20	Naphtha	4	Chlorine	2									Plastic	16											PolymerizationPlantData.cs
+Ids.Recipes.PlasticMakingEthanol	Plastic making	Polymerization plant	20	Ethanol	4	Chlorine	2									Plastic	16											PolymerizationPlantData.cs
+Ids.Recipes.CementProductionGas	Cement production	Rotary Kiln (gas)	40	Limestone	12	Fuel gas	4									Cement	4	Exhaust	12									RotaryKilnData.cs
+Ids.Recipes.CementProductionHydrogen	Cement production	Rotary Kiln (gas)	40	Limestone	12	Hydrogen	4									Cement	4	Exhaust	12									RotaryKilnData.cs
+Ids.Recipes.CementProduction	Cement production	Rotary Kiln	40	Limestone	6	Coal	1									Cement	2	Exhaust	6									RotaryKilnData.cs
+Ids.Recipes.BrineMakingHeated	Brine making	Evaporation pond (heated)	20	Seawater	30											Brine	16											EvaporationPondData.cs
+Ids.Recipes.SaltMakingHeated	Salt making	Evaporation pond (heated)	40	Seawater	30											Salt	8											EvaporationPondData.cs
+Ids.Recipes.SaltMakingFromBrineHeated	Salt making	Evaporation pond (heated)	20	Brine	16											Salt	8											EvaporationPondData.cs
+Ids.Recipes.BrineMaking	Brine making	Evaporation pond	40	Seawater	30											Brine	16											EvaporationPondData.cs
+Ids.Recipes.SaltMaking	Salt making	Evaporation pond	80	Seawater	30											Salt	8											EvaporationPondData.cs
+Ids.Recipes.SaltMakingFromBrine	Salt making	Evaporation pond	40	Brine	16											Salt	8											EvaporationPondData.cs
+Ids.Recipes.SiliconCrystallization	Silicon crystallization	Silicon crystallizer	60	Silicon (poly)	18	Water	1									Silicon wafer	6											SiliconCrystallizerData.cs
