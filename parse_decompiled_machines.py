@@ -225,6 +225,8 @@ def build_recipes_dict(file, machine_dict, duration_dict):
                     duration = '40'
                 elif duration == 'OilDistillationData.DURATION':
                     duration = '20'
+                elif duration == '3 * duration' and machine == 'Crusher':
+                    duration = 20
                 # print(f'Duration: {duration}')
                 recipes_dict = construct_recipes_dict(recipes_dict, identifier, name, machine, duration, inputs, outputs)
         else:
@@ -309,6 +311,3 @@ def main():
     print("\n-- Done --")
 if __name__ == '__main__':
     main()
-
-# TODO: Add electricity consumption
-# TODO: write lookups for inputs and outputs cause apparently we're using vars there too...
