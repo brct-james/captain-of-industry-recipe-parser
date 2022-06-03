@@ -4,7 +4,7 @@
 
 - Decompile game .dlls with ILSpy
 
-- - Place .cs files in decompiled folder in their respective directories (e.g. `./decompiled/Mafi.Base.Prototypes.Machines/*.cs`)
+- - Place .cs files in `./decompiled` in their respective directories (e.g. `./decompiled/Mafi.Base.Prototypes.Machines/*.cs`)
 
 - Install requirements.txt
 
