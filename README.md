@@ -14,7 +14,7 @@ The latest editions of the output files are available for download in the [outpu
 
 - Run script `clear; python3 parse_decompiled_machines.py`
 
-- Check `./output` for CSVs
+- Check `./output` for TSVs
 
 ## TODO
 
@@ -29,3 +29,5 @@ The latest editions of the output files are available for download in the [outpu
 - Add custom logic for the weird files currently in the `files_to_skip` list
 
 - Add electricity consumption
+
+- Add building costs

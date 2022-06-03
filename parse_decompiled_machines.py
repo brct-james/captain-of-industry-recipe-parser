@@ -306,8 +306,8 @@ def main():
     print(f'\nRecipe Dictionary DF Shape: {df.shape}')
     print(f'\n{mcm_df.head(5)}')
     print(f'\nMCM Dictionary DF Shape: {mcm_df.shape}')
-    df.to_csv('output/decompiled_machine_recipes.csv', sep='\t', index=False)
-    mcm_df.to_csv('output/decompiled_machine_cost_map.csv', sep='\t', header=False)
+    df.to_csv('output/decompiled_machine_recipes.tsv', sep='\t', index=False)
+    mcm_df.to_csv('output/decompiled_machine_cost_map.tsv', sep='\t', header=False)
     print("\n-- Done --")
 if __name__ == '__main__':
     main()
