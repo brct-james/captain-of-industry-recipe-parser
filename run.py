@@ -141,6 +141,61 @@ def construct_recipes_dict(recipes_dict, identifier, name, machine, duration, in
         recipes_dict.setdefault(f'output{n}qty', []).append(output_qty)
     return recipes_dict
 
+def _coerce_input_output_quantities(io_list, ops, name, file):
+    for idx, op in enumerate(ops):
+        # print(op)
+        op_split = op.split(', ')
+        # check for num var in qty
+        num_var = re.search(r'(num[0-9]*)', op_split[0])
+        if num_var:
+            print("Found num_var, search for value")
+            num_var = num_var.group(0)
+            # lookup value
+            new_rx = f'int {num_var} = ([0-9]*);'
+            # print(new_rx)
+            num_var_value = re.search(new_rx, file)
+            if num_var_value:
+                num_var_value = num_var_value.group(1)
+                op_split[0] = op_split[0].replace(num_var, num_var_value)
+            else:
+                print(f'Could not find match for {new_rx}')
+                sys.exit()
+        quantity_var = re.search(r'(quantity[0-9]*)', op_split[0])
+        if quantity_var:
+            print("Found quantity_var, search for value")
+            quantity_var = quantity_var.group(0)
+            # lookup value
+            new_rx = f'int {quantity_var} = ([0-9]*);'
+            # print(new_rx)
+            quantity_var_value = re.search(new_rx, file)
+            if quantity_var_value:
+                quantity_var_value = quantity_var_value.group(1)
+                op_split[0] = op_split[0].replace(quantity_var, quantity_var_value)
+            else:
+                print(f'Could not find match for {new_rx}')
+                sys.exit()
+        if name in ['am'] and 'multiplier' in op_split[0]:
+            # TODO: void method, multiplier is a pain to figure out, fix later
+            print('Void method, defaulting multiplier to 1')
+            op_split[0] = op_split[0].replace('multiplier', '1')
+        mult_formula = re.search(r'([0-9]*).\*.([0-9]*)', op_split[0])
+        if mult_formula:
+            print(op_split[0])
+            print(mult_formula)
+            left = mult_formula.group(1)
+            right = mult_formula.group(2)
+            op_split[0] = str(float(left) * float(right))
+        div_formula = re.search(r'([0-9]*).\/.([0-9]*)', op_split[0])
+        if div_formula:
+            print(op_split[0])
+            print(div_formula)
+            left = div_formula.group(1)
+            right = div_formula.group(2)
+            op_split[0] = str(float(left) / float(right))
+        print(op_split)
+        io_list[idx] = op_split[0:2]
+    return io_list
+
 def build_recipes_dict(file, machine_dict, duration_dict, ids_dict, translations_dict):
     # now search for recipes
     recipe_matches = re.findall(rx_dict['recipe_builder'], file)
@@ -174,19 +229,13 @@ def build_recipes_dict(file, machine_dict, duration_dict, ids_dict, translations
         name = start_op.split(", ")[0][1:-1]
         # print(f'Name: {name}')
         inputs = [['','']] * 6
-        for idx, inp in enumerate(input_ops):
-            # print(inp)
-            inp_split = inp.split(', ')
-            # print(inp_split)
-            inputs[idx] = inp_split[0:2]
-        # print(f'Inputs: {inputs}')
+        inputs = _coerce_input_output_quantities(inputs, input_ops, name, file)
+        if inputs == None:
+            sys.exit()
+        print(f'Inputs: {inputs}')
         outputs = [['','']] * 6
-        for idx, otp in enumerate(output_ops):
-            # print(otp)
-            otp_split = otp.split(', ')
-            # print(otp_split)
-            outputs[idx] = otp_split[0:2]
-        # print(f'Outputs: {outputs}')
+        outputs = _coerce_input_output_quantities(outputs, output_ops, name, file)
+        print(f'Outputs: {outputs}')
         identifier = start_op.split(", ")[1]
         # print(f'ID: {identifier}')
         if identifier in ['recipeId', 'id']:

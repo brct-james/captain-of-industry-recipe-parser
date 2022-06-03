@@ -24,11 +24,7 @@ The latest editions of the output files are available for download in the [outpu
 
 - Expand id/translation map implementation for more than just Ids.Products
 
-- Write lookups for input and output qtys cause apparently we're using vars there too...
-
 - Pull `OilDistillationData.DURATION` from the referenced class automatically rather than hard-coding
-
-- Support for arthimetic in fields (e.g. `3 * duration` and `2 * OilDistillationData.DURATION`)
 
 - Add custom logic for the weird files currently in the `files_to_skip` list
 
@@ -37,3 +33,5 @@ The latest editions of the output files are available for download in the [outpu
 - Add building costs
 
 - Look into multi-language export using translation files (`Chemical plant II` maps to `ChemicalPlant2__name`)
+
+- Lookup `multiplier` for `void registerElectronics` / `registerCp` in `AssemblyData.cs` (affects input/output qtys) instead of hard-coding

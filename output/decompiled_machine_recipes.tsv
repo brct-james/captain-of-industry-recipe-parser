@@ -23,11 +23,11 @@ Ids.Recipes.WheatMilling	Wheat milling	Mill	30	Wheat	8											Flour	8	Animal 
 Ids.Recipes.SoybeanMilling	Soybean milling	Mill	30	Soybean	8											Cooking oil	3	Animal feed	4									FoodMillData.cs
 Ids.Recipes.CanolaMilling	Canola milling	Mill	30	Canola	8											Cooking oil	6	Animal feed	2									FoodMillData.cs
 Ids.Recipes.CornMilling	Corn milling (wet)	Mill	40	Corn	8	Water	2									Corn mash	6	Animal feed	2									FoodMillData.cs
-Ids.Recipes.RubberProductionNaphtha	Rubber production	Rubber maker	20	Naphtha	quantity	Sulfur	quantity2									Rubber	quantity4											VacuumDistillationTowerData.cs
-Ids.Recipes.RubberProductionNaphthaAlt	Rubber production (coal)	Rubber maker	30	Naphtha	quantity	Coal	quantity3									Rubber	quantity4	Waste water	1									VacuumDistillationTowerData.cs
-Ids.Recipes.RubberProductionEthanol	Rubber production (ethanol)	Rubber maker	20	Ethanol	quantity	Sulfur	quantity2									Rubber	quantity4											VacuumDistillationTowerData.cs
-Ids.Recipes.RubberProductionDiesel	Rubber production (alt)	Rubber maker	20	Diesel	quantity	Sulfur	quantity2									Rubber	quantity4											VacuumDistillationTowerData.cs
-Ids.Recipes.RubberProductionDieselWithCoal	Rubber production (coal) (alt)	Rubber maker	30	Diesel	quantity	Coal	quantity3									Rubber	quantity4	Waste water	2									VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionNaphtha	Rubber production	Rubber maker	20	Naphtha	4	Sulfur	1									Rubber	6											VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionNaphthaAlt	Rubber production (coal)	Rubber maker	30	Naphtha	4	Coal	1									Rubber	6	Waste water	1									VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionEthanol	Rubber production (ethanol)	Rubber maker	20	Ethanol	4	Sulfur	1									Rubber	6											VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionDiesel	Rubber production (alt)	Rubber maker	20	Diesel	4	Sulfur	1									Rubber	6											VacuumDistillationTowerData.cs
+Ids.Recipes.RubberProductionDieselWithCoal	Rubber production (coal) (alt)	Rubber maker	30	Diesel	4	Coal	1									Rubber	6	Waste water	2									VacuumDistillationTowerData.cs
 Ids.Recipes.SugarToEthanolFermentation	Ethanol making (sugar)	Fermentation tank	40	Sugar	8	Oxygen	8									Ethanol	4	Carbon dioxide	8									FermentationTankData.cs
 Ids.Recipes.CornToEthanolFermentation	Ethanol making (corn)	Fermentation tank	40	Corn mash	6	Oxygen	8									Ethanol	3	Carbon dioxide	6									FermentationTankData.cs
 Ids.Recipes.AntibioticsFermentation	Antibiotics	Fermentation tank	80	Sugar	4	Ammonia	1	Oxygen	8							Antibiotics	8	Carbon dioxide	4									FermentationTankData.cs
@@ -120,14 +120,14 @@ Ids.Recipes.SteelSmeltingT2	Steel smelting	Oxygen furnace II	40	Molten iron	32	O
 Ids.Recipes.SteelSmelting	Steel smelting	Oxygen furnace	40	Molten iron	16	Oxygen	12									Molten steel	8	Exhaust	16									OxygenFurnaceData.cs
 Ids.Recipes.UraniumEnrichment	Uranium enrichment	Enrichment plant	60	Yellow cake	3	Hydrogen fluoride	1									Uranium pellets	3											UraniumEnrichmentPlant.cs
 Ids.Recipes.HydrogenReforming	Hydrogen reforming	Hydrogen reformer	20	Fuel gas	12	Steam hi	1									Hydrogen	12	Carbon dioxide	12									HydrogenReformerData.cs
-Ids.Recipes.ConcreteMixingSlagT3	Concrete mixing	Concrete Mixer III	20	Cement	2 * num2	Sand	2 * num3	Slag crushed	2 * num4	Water	2 * num5					Concrete slab	2 * num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingGravelT3	Concrete mixing	Concrete Mixer III	20	Cement	2 * num2	Sand	2 * num3	Gravel	2 * num4	Water	2 * num5					Concrete slab	2 * num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingSlagT2	Concrete mixing	Concrete Mixer II	20	Cement	num2	Sand	num3	Slag crushed	num4	Water	num5					Concrete slab	num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingGravelT2	Concrete mixing	Concrete Mixer II	20	Cement	num2	Sand	num3	Gravel	num4	Water	num5					Concrete slab	num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingSlag	Concrete mixing	Concrete Mixer	40	Cement	num2	Sand	num3	Slag crushed	num4	Water	num5					Concrete slab	num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingGravel	Concrete mixing	Concrete Mixer	40	Cement	num2	Sand	num3	Gravel	num4	Water	num5					Concrete slab	num6											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingBasic	Concrete mixing	Concrete Mixer	40	Cement	2 * num2	Slag crushed	1	Water	num5 / 2							Concrete slab	num6 / 2											ConcreteMixerData.cs
-Ids.Recipes.ConcreteMixingBasicGravel	Concrete mixing	Concrete Mixer	40	Cement	2 * num2	Gravel	1	Water	num5 / 2							Concrete slab	num6 / 2											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingSlagT3	Concrete mixing	Concrete Mixer III	20	Cement	2.0	Sand	4.0	Slag crushed	12.0	Water	8.0					Concrete slab	16.0											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingGravelT3	Concrete mixing	Concrete Mixer III	20	Cement	2.0	Sand	4.0	Gravel	12.0	Water	8.0					Concrete slab	16.0											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingSlagT2	Concrete mixing	Concrete Mixer II	20	Cement	1	Sand	2	Slag crushed	6	Water	4					Concrete slab	8											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingGravelT2	Concrete mixing	Concrete Mixer II	20	Cement	1	Sand	2	Gravel	6	Water	4					Concrete slab	8											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingSlag	Concrete mixing	Concrete Mixer	40	Cement	1	Sand	2	Slag crushed	6	Water	4					Concrete slab	8											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingGravel	Concrete mixing	Concrete Mixer	40	Cement	1	Sand	2	Gravel	6	Water	4					Concrete slab	8											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingBasic	Concrete mixing	Concrete Mixer	40	Cement	2.0	Slag crushed	1	Water	2.0							Concrete slab	4.0											ConcreteMixerData.cs
+Ids.Recipes.ConcreteMixingBasicGravel	Concrete mixing	Concrete Mixer	40	Cement	2.0	Gravel	1	Water	2.0							Concrete slab	4.0											ConcreteMixerData.cs
 Ids.Recipes.GoldSettling	Gold settling	Settling tank	30	Gold ore powder	24	Acid	8									Gold ore concentrate	12	Toxic slurry	12									SettlingTankData.cs
 Ids.Recipes.UraniumLeaching	Uranium leaching	Settling tank	60	Uranium ore crushed	12	Acid	4									Yellow cake	6	Toxic slurry	6									SettlingTankData.cs
 Ids.Recipes.FluorideLeaching	Fluoride leaching	Settling tank	60	Rock	8	Acid	6									Hydrogen fluoride	8	Slag	2									SettlingTankData.cs
