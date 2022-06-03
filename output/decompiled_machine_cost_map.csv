@@ -1,0 +1,58 @@
+Gold furnace	Costs.Machines.GoldFurnace
+Chemical plant II	Costs.Machines.ChemicalPlant2
+Chemical plant	Costs.Machines.ChemicalPlant
+Copper electrolysis	Costs.Machines.CopperElectrolysis
+Coal maker	Costs.Machines.CharcoalMaker
+Mill	Costs.Machines.FoodMill
+Assembly (robotic) II	Costs.Machines.AssemblyRoboticT2
+Assembly (robotic)	Costs.Machines.AssemblyRoboticT1
+Assembly (electric) II	Costs.Machines.AssemblyElectrifiedT2
+Assembly (electric)	Costs.Machines.AssemblyElectrified
+Assembly (manual)	Costs.Machines.AssemblyManual
+Rubber maker	Costs.Machines.VacuumDistillationTower
+Fermentation tank	Costs.Machines.FermentationTank
+Distillation (stage I)	Costs.Machines.DistillationTowerT1
+Distillation (stage II)	Costs.Machines.DistillationTowerT2
+Distillation (stage III)	Costs.Machines.DistillationTowerT3
+Crusher	Costs.Machines.Crusher
+Basic distiller	Costs.Machines.BioDieselDistiller
+Cracking unit	Costs.Machines.HydroCrackerT1
+Cooling tower	Costs.Machines.CoolingTower
+Cooling tower (large)	Costs.Machines.CoolingTowerT2
+Glass maker II	Costs.Machines.GlassMakerT2
+Glass maker	Costs.Machines.GlassMakerT1
+Baking unit	Costs.Machines.BakingUnit
+Air separator	Costs.Machines.AirSeparator
+Boiler (coal)	Costs.Machines.Boiler
+Boiler (gas)	Costs.Machines.BoilerGas
+Boiler (electric)	Costs.Machines.BoilerElectric
+Wastewater treatment	Costs.Machines.WaterTreatmentPlant
+Silicon reactor	Costs.Machines.SiliconReactor
+Arc furnace II	Costs.Machines.ArcFurnace2
+Arc furnace	Costs.Machines.ArcFurnace
+Blast furnace II	Costs.Machines.SmeltingFurnaceT2
+Blast furnace	Costs.Machines.SmeltingFurnaceT1
+Cooled caster II	Costs.Machines.CasterCooledT2
+Cooled caster	Costs.Machines.CasterCooled
+Metal caster II	Costs.Machines.Caster2
+Metal caster	Costs.Machines.Caster
+Water chiller	Costs.Machines.WaterChiller
+Liquid dump	Costs.Machines.WasteWaterPump
+Food processor	Costs.Machines.FoodProcessor
+Oxygen furnace II	Costs.Machines.OxygenFurnace2
+Oxygen furnace	Costs.Machines.OxygenFurnace
+Enrichment plant	Costs.Machines.UraniumEnrichmentPlant
+Hydrogen reformer	Costs.Machines.HydrogenReformer
+Concrete Mixer III	Costs.Machines.MixerT3
+Concrete Mixer II	Costs.Machines.MixerT2
+Concrete Mixer	Costs.Machines.Mixer
+Settling tank	Costs.Machines.SettlingTank
+Sour water stripper	Costs.Machines.SourWaterStripper
+Electrolyzer	Costs.Machines.Electrolyzer
+Thermal desalinator	Costs.Machines.ThermalDesalinator
+Polymerization plant	Costs.Machines.PolymerizationPlant
+Rotary Kiln (gas)	Costs.Machines.RotaryKilnGas
+Rotary Kiln	Costs.Machines.RotaryKiln
+Evaporation pond (heated)	Costs.Machines.EvaporationPondHeated
+Evaporation pond	Costs.Machines.EvaporationPond
+Silicon crystallizer	Costs.Machines.SiliconCrystallizer
