@@ -20,6 +20,10 @@ The latest editions of the output files are available for download in the [outpu
 
 - Improve comments, DRYness/atomization
 
+- Seems like I can use the translation .po files to get the readable product name by manipulating `Ids.Products.CopperScrap` into `Product_CopperScrap_name` then looking it up in the tranlation file
+- - Could support multi-language export if I can also lookup the translations for the machines (and recipe names? or are these unnecessary) it seems `Chemical plant II` maps to `ChemicalPlant2__name`
+- - Looks like I will have to walk these through `Mafi.Base/Ids.cs` to get the id used in the translation string. The only one I found that can't be directly converted is `Ids.Products.SteamLo` which is actually `Product_SteamLP_name` in the strs
+
 - Write lookups for input and output qtys cause apparently we're using vars there too...
 
 - Pull `OilDistillationData.DURATION` from the referenced class automatically rather than hard-coding
