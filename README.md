@@ -1,5 +1,9 @@
 # Captain of Industry Recipe Parser
 
+# Deprecated
+
+The data I was able to scrape was incomplete, and this project has been deprecated with the creation of [this mod that does the same thing but better](https://github.com/David-Melo/captain-of-data). Please head there for your data needs instead.
+
 ## Download
 
 The latest editions of the output files are available for download in the [output folder](https://github.com/brct-james/captain-of-industry-recipe-parser/tree/main/output). There is currently no automation to keep these up to date, so you may need to run the script yourself if a new game version is released.
